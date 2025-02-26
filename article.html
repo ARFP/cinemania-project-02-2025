@@ -9,12 +9,15 @@
 </head>
 <body>
 
-    <div id="haut_page" class="logo_bis">
+<header>
+     <div id="haut_page" class="logo_bis">
         <img src="/images/logo_cinemania.png">
     </div>
-
-        <h1>Captain America: Brave New World - Une Renaissance Héroïque ou un Échec ?</h1>
-
+       
+</header>
+<div id="margeEntier">
+        <h1>Nos derniers articles</h1>
+<h2>Captain America: Brave New World - Une Renaissance Héroïque ou un Échec ?</h1>
     <div class="gr1">
     <div class="auteur">
         <p>Auteur, publié le 25/02/2025</p>
@@ -79,13 +82,19 @@
         <h3>Donnez votre avis</h3>
 
         <form action="/submit_review" method="post">
-            <label for="nom">Nom :</label>
+            <div id="nom">
+                <label for="nom">Nom :</label><br>
             <input type="text" id="nom" name="nom" required><br>
-
-            <label for="prenom">Prénom :</label>
+               <label for="prenom">Prénom :</label><br>
             <input type="text" id="prenom" name="prenom" required>
+            </div>
 
-            <label for="note">Note du film</label>
+            <div id="prenom">
+              
+            </div>
+
+           <div>
+            <label for="note">Note du film</label><br>
             <select id="note" name="note" required>
                 <option value="">--Votre note--</option>
                 <option value="20">20</option>
@@ -111,13 +120,18 @@
                 <option value="00">00</option>
             </select><br>
 
-            <label for="email">E-mail :</label>
+           </div>
+            
+           <div>
+            <label for="email">E-mail :</label><br>
             <input type="email" id="email" name="email" required><br>
-
-            <label for="avis">Votre avis :</label>
+           </div>
+            <div>
+                <label for="avis">Votre avis :</label><br>
             <textarea id="avis" name="avis" rows="4" cols="50" required></textarea><br>
-
-            <input type="submit" value="Envoyer">
+            </div>
+            
+            <input type="submit" value="Envoyer" id="Envoyer">
 
         </form>
 
@@ -132,5 +146,7 @@
         <footer>Groupe Bleu, ABC Dev</footer>
 
     
+</div>
+
 </body>
 </html>
