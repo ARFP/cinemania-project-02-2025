@@ -1,0 +1,46 @@
+.logo {
+    background-color: #ed2738;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    height: 100%;
+}
+
+.img_cine {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.img_cine img {
+    transition: transform 0.5s ease;
+}
+
+.img_cine:hover img {
+    transform: scale(1.2);
+}
+
+h1 {
+    font-family: lora;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-family: lora;
+    font-size: 30px;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: lora;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lecture {
+    font-family: lora;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
