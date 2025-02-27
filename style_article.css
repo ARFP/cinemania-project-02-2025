@@ -27,13 +27,12 @@ h1 {
     text-align: justify;
     width: 90%;
     
-   
 }
 
-#nom{
-
-    display:inline-block;
-}
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
 
 #margeEntier{
     text-align: center;

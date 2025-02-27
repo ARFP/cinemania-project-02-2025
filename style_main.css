@@ -1,46 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
 .logo {
-    background-color: #ed2738;
     display: flex;
     justify-content: center;
+    background-color: #ed2738;
     margin: 0%;
     height: 100%;
 }
 
-.img_cine {
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    align-items: flex-start
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.movie{
+    margin-bottom: 30px;
+}
+
+.movie img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .img_cine {
     display: flex;
     overflow: hidden;
     justify-content: center;
-}
+} */
 
-.img_cine img {
+/* .img_cine img {
     transition: transform 0.5s ease;
 }
 
 .img_cine:hover img {
     transform: scale(1.2);
-}
-
-h1 {
-    font-family: lora;
-    font-size: 60px;
-    text-align: center;
-}
-
-h2 {
-    font-family: lora;
-    font-size: 30px;
-    text-align: center;
-}
-
-.paragraph {
-    font-family: lora;
-    font-size: 20px;
-    text-align: center;
-}
+} */
 
 .lecture {
-    font-family: lora;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
 }
+
