@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Article Capitaine America</title>
-        <link rel="stylesheet" href="style_article.css">
+        <link rel="stylesheet" href="/css/style_article.css">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -64,57 +64,59 @@
             </div>
             <h2>Note pour le film: 11/20</h2>
         </article>
-        <div class="avis">
             <h3>Donnez votre avis</h3>
             <form action="/submit_review" method="post">
-                <div class="nom">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
+                <div class="gr">
+                    <div class="case_for">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="case_for">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
                 </div>
-                <div class="prenom">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" required>
+                <div class="gr">
+                    <div class="case_for">
+                        <label for="note">Note du film</label>
+                        <select id="note" name="note" required>
+                            <option value="">--Votre note--</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
-                <div class="avisfilm">
-                    <label for="note">Note du film</label>
-                    <select id="note" name="note" required>
-                        <option value="">--Votre note--</option>
-                        <option value="20">20</option>
-                        <option value="19">19</option>
-                        <option value="18">18</option>
-                        <option value="17">17</option>
-                        <option value="16">16</option>
-                        <option value="15">15</option>
-                        <option value="14">14</option>
-                        <option value="13">13</option>
-                        <option value="12">12</option>
-                        <option value="11">11</option>
-                        <option value="10">10</option>
-                        <option value="09">09</option>
-                        <option value="08">08</option>
-                        <option value="07">07</option>
-                        <option value="06">06</option>
-                        <option value="05">05</option>
-                        <option value="04">04</option>
-                        <option value="03">03</option>
-                        <option value="02">02</option>
-                        <option value="01">01</option>
-                        <option value="00">00</option>
-                    </select>
-                </div>
-                <div class="email">
-                    <label for="email">E-mail :</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="votreAvis">
-                        <label for="avis">Votre avis :</label>
-                        <textarea id="avis" name="avis" rows="4" cols="50" required></textarea>
-                        <input type="submit" value="Envoyer" id="Envoyer">
+                <div class="case_for">
+                    <label for="avis">Votre avis :</label>
+                    <input type="text" id="avis" minlength="2" maxlength="1000"  required></input>
+                    <input type="submit" value="Envoyer" id="Envoyer">
                 </div>
                     
                 
             </form>
-        </div>
 
                 <div class="retour">
                     <p><a href="cine_main.html">Retour page d'accueil</a></p>
